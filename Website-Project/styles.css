@@ -1,0 +1,73 @@
+/* Custom Styles for Movie Explorer */
+
+/* Navbar brand color */
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Button transition */
+.btn {
+  transition: background 0.3s, transform 0.2s;
+}
+.btn:hover {
+  background: #0d6efd;
+  transform: scale(1.05);
+}
+
+/* Movie card styles */
+.movie-card {
+  transition: box-shadow 0.3s, transform 0.4s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  background: #fff;
+  overflow: hidden;
+}
+.movie-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  transform: rotateY(8deg) scale(1.03);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .movie-card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Recent searches */
+#recentSearches button {
+  margin: 0 0.25rem 0.5rem 0.25rem;
+  transition: background 0.2s, color 0.2s;
+}
+#recentSearches button.active, #recentSearches button:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+
+/* Spinner */
+#loadingSpinner {
+  min-height: 60px;
+}
+
+/* Favorite heart icon */
+.favorite-btn {
+  background: none;
+  border: none;
+  color: #dc3545;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  z-index: 2;
+  transition: color 0.2s;
+}
+.favorite-btn.favorited {
+  color: #e0245e;
+}
+
+/* Modal image */
+#movieModalBody img {
+  max-width: 200px;
+  border-radius: 8px;
+} 
